@@ -1,0 +1,5 @@
+﻿id,machine_id,line_id,issue,failure_type,priority,status,downtime_minutes,created_at,updated_at,actual_repair_minutes,resolution,closed_at,notes
+5,M202,L2,配電異常,electrical,medium,open,10,2026-03-26 14:32:39,2026-03-26 15:25:36,,,,"2026-03-26 15:25:00 | 已通知維修班長到場
+2026-03-26 15:25:18 | 已拆下軸承外蓋進行檢查
+2026-03-26 15:25:36 | 確認 #3 軸承磨損，待更換料號 BRG-2048"
+6,M101,L2,驅動模組過熱,electrical,low,open,5,2026-03-26 14:34:50,2026-03-26 14:34:50,,,,
