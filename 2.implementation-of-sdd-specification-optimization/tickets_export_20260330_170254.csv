@@ -1,3 +1,0 @@
-﻿id,machine_id,line_id,issue,failure_type,priority,status,downtime_minutes,created_at,updated_at,actual_repair_minutes,resolution,closed_at,notes
-1,M202,L2,馬達異常,mechanical,high,closed,10,2026-03-26 19:52:56,2026-03-30 17:00:23,45,更換 #3 軸承,2026-03-30 17:00:23,
-2,M101,L2,主軸異音,mechanical,high,open,30,2026-03-30 16:58:27,2026-03-30 16:58:27,,,,
