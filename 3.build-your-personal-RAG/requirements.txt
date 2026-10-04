@@ -1,0 +1,9 @@
+# Python >= 3.10 required (developed with 3.12.4)
+python-dotenv==1.0.1
+psycopg2-binary==2.9.11
+pgvector==0.4.2
+chardet==7.4.1
+huggingface_hub==1.9.2
+litellm==1.83.4
+openai==2.30.0
+cohere==6.0.0
