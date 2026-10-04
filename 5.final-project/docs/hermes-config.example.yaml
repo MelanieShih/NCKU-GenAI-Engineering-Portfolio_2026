@@ -1,0 +1,16 @@
+providers:
+  - id: aiase
+    type: openai
+    base_url: ${AIASE_LITELLM_BASE_URL}
+    api_key: ${AIASE_LITELLM_KEY}
+
+models:
+  - id: aiase_model
+    provider: aiase
+    model: aiase_model
+
+default_model: aiase_model
+
+skills:
+  external_dirs:
+    - /ABSOLUTE/PATH/TO/final-project-<github_id>/skills

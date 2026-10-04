@@ -1,0 +1,62 @@
+{
+  "task_id": "open_repair_002",
+  "task_description": "Repair parse_csv_line(line): parse a CSV line with quoted fields, commas inside quotes, and doubled double quotes inside quoted fields.",
+  "buggy_code": "def parse_csv_line(line):\n    if line == \"\":\n        return []\n    return line.split(\",\")\n",
+  "constraints": {
+    "entry_function": "parse_csv_line",
+    "max_loc": 500,
+    "imports_forbidden": [
+      "os",
+      "sys",
+      "subprocess"
+    ]
+  },
+  "sample_inputs": [
+    {
+      "input": [
+        ""
+      ],
+      "expected": [
+        ""
+      ]
+    },
+    {
+      "input": [
+        "a,b,c"
+      ],
+      "expected": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        "a,,b"
+      ],
+      "expected": [
+        "a",
+        "",
+        "b"
+      ]
+    },
+    {
+      "input": [
+        "a,\"b,c\",d"
+      ],
+      "expected": [
+        "a",
+        "b,c",
+        "d"
+      ]
+    },
+    {
+      "input": [
+        "\"hello \"\"world\"\"\""
+      ],
+      "expected": [
+        "hello \"world\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "task_id": "open_repair_003",
+  "task_description": "Repair unique_paths(m, n): return the number of paths from top-left to bottom-right moving only right or down.",
+  "buggy_code": "def unique_paths(m, n):\n    if m <= 0 or n <= 0:\n        return 1\n    dp = [[0] * n for _ in range(m)]\n    for i in range(m):\n        for j in range(n):\n            if i == 0 or j == 0:\n                dp[i][j] = 1\n            else:\n                dp[i][j] = dp[i - 1][j] + dp[i][j - 1]\n    return dp[m - 1][n - 1]\n",
+  "constraints": {
+    "entry_function": "unique_paths",
+    "max_loc": 500,
+    "imports_forbidden": [
+      "os",
+      "sys",
+      "subprocess"
+    ]
+  },
+  "sample_inputs": [
+    {
+      "input": [
+        1,
+        1
+      ],
+      "expected": 1
+    },
+    {
+      "input": [
+        2,
+        2
+      ],
+      "expected": 2
+    },
+    {
+      "input": [
+        3,
+        3
+      ],
+      "expected": 6
+    },
+    {
+      "input": [
+        0,
+        5
+      ],
+      "expected": 0
+    }
+  ]
+}
