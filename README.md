@@ -41,8 +41,4 @@
   2. **Pairwise Track (Code Author & Bug Hunter)**：自動生成受限 Python 程式碼並執行 Self-test；結構化分析候選程式碼並輸出精準的 Bug Report。
   3. **Open Track (Open Code Repair)**：自動修復 Buggy Code，並透過 Deterministic Evaluator 直接比較修補前後在同一樣本上的測試表現，確保修補結果具備嚴謹的客觀數據證據。
 
----
-## 👨‍💻 關於作者
-**施孟伶 (Meng-Ling Shih)**  
-* 國立臺北科技大學 工業工程與管理研究所 (M.S. in Industrial Engineering and Management, NTUT)
-* 專注於 LLM 應用開發、RAG 系統架構以及工業流程的數位自動化轉型。
+
