@@ -1,0 +1,16 @@
+{
+  "_comment": "將本檔複製到 ~/.pi/agent/models.json。此範例使用本機 Ollama 的 OpenAI-compatible endpoint，模型為 qwen2.5:7b。",
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://localhost:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "local-no-key",
+      "models": [
+        {
+          "id": "qwen2.5:7b",
+          "input": ["text"]
+        }
+      ]
+    }
+  }
+}
